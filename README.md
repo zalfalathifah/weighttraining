@@ -1,2 +1,13 @@
 # weighttraining
-Proyek untuk menganalisis data latihan beban dan memprediksi kinerja latihan
+Proyek untuk menganalisis data latihan beban dan memprediksi kinerja latihan 
+Dalam era teknologi saat ini, perangkat wearable seperti Jawbone Up, Nike FuelBand, dan Fitbit memungkinkan pengumpulan data aktivitas pribadi dengan biaya yang terjangkau. Gerakan "quantified self" mendorong individu untuk mengukur dan menganalisis perilaku mereka untuk meningkatkan kesehatan dan menemukan pola. Proyek ini bertujuan untuk memprediksi cara peserta melakukan latihan angkat beban berdasarkan data yang dikumpulkan dari akselerometer.
+Data yang digunakan dalam proyek ini terdiri dari dua set: Data Latihan (Training Data): pml-training.csvData Pengujian (Testing Data): pml-testing.csv 
+Data ini mencakup informasi dari 6 peserta yang melakukan angkat beban dengan benar dan salah dalam 5 cara berbeda. Variabel target yang ingin diprediksi adalah "classe".
+Proses Analisis : 1. Persiapan Data : - Pembersihan Data: Menghapus kolom yang tidak relevan dan menangani nilai yang hilang. - Pembagian Data: Memisahkan data menjadi set pelatihan dan set validasi untuk evaluasi model.
+2. Eksplorasi Data : - Melakukan analisis deskriptif untuk memahami distribusi dan karakteristik data.- Menggunakan visualisasi untuk mengidentifikasi pola dan hubungan antar variabel.
+3. Pemodelan : - Pemilihan Model: Menggunakan algoritma Random Forest karena kemampuannya dalam menangani data besar dan kompleks.- Pelatihan Model: Melatih model menggunakan set pelatihan dan melakukan validasi silang untuk menghindari overfitting.- Evaluasi Model: Menggunakan metrik seperti akurasi, presisi, dan recall untuk menilai kinerja model.
+4. Validasi Silang: Menggunakan teknik k-fold cross-validation untuk memastikan model tidak hanya bekerja pada data pelatihan tetapi juga dapat digeneralisasi ke data baru.
+5. Prediksi :Menggunakan model yang telah dilatih untuk memprediksi kelas dari 20 kasus dalam data pengujian.
+Hasil : Model yang dibangun menunjukkan akurasi yang tinggi dalam memprediksi kelas latihan angkat beban. Hasil evaluasi menunjukkan bahwa model dapat mengidentifikasi cara yang benar dan salah dalam melakukan latihan dengan baik.
+Kesalahan di Luar Sampel. Meskipun model menunjukkan kinerja yang baik, ada beberapa faktor yang dapat menyebabkan kesalahan di luar sampel, seperti: - Variasi dalam teknik individu peserta.- Perbedaan dalam kondisi pengukuran (misalnya, kelelahan, kecepatan).- Noise dalam data yang dihasilkan oleh akselerometer.
+Kesimpulan :Proyek ini berhasil membangun model prediksi yang dapat digunakan untuk menilai kualitas latihan angkat beban berdasarkan data akselerometer. Dengan menggunakan teknik pembelajaran mesin, kita dapat memberikan umpan balik yang berharga kepada individu untuk meningkatkan teknik latihan mereka.
